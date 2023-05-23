@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #2f3e46;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.brand {
+    display: flex;
+    align-items: center;
+}
+  
+li>a {
+    padding: 8px 24px;
+}
+ 
+li {
+    list-style-type: none;
+} 
+  
+a {
+    color: white;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #cad2c5;
+}
+  
+.nav-links {
+    display: flex;
+    align-items: center;
+} 
+
+.button-menu-toggle {
+    display: none;
+}
+
+body{
+    background-color: #cad2c5;
+    color: black;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    height: 200px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer p {
+    position: absolute;
+    color: #cad2c5;
+}
+
+footer {
+    background-color: #2f3e46;
+    bottom: 0px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+iframe {
+    padding: 50px;
+    width: 550px;
+    height: 320px;
+}
+
+.botonFooter {
+    height: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    min-height: 70vh;
+}
+
+@media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+
+    .nav-links {
+      display: none;
+    }
+   
+    .button-menu-toggle {
+      display: block;
+      background-color: #cad2c5;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+    }
+
+    img {
+        width: 50%;
+        height: 200px;
+        padding-left: 25%;
+    }
+    
+    .imagenes {
+        flex-direction: column;
+    }
+}
